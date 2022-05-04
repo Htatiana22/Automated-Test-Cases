@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="c7dbebc34cd0d9bb5689935644b43f6738056c682c2903e4ef64373dd38a63ec.html">Check Flights On The Latam Airline Page</a></span>
+                > <span class="truncate-60"><a
+                    href="90097b240c8c871fa2c8998a716146b40509173b9a07de10b62e550054b4511c.html">Check the flights on the website of the airline latam </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-05-2022 18:04</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Check Flights On The Latam Airline Page </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user<br />
+I want to enter to the latam's airline page<br />
+To consult the flights
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="3a473d7e3ecece51380175fb9c5eda5d662d9771284839d838cc432f5fda6a41.html">User Story
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="e4ef4831a220e0a9cbdbfec794f5c31b3fef2adf1cb8126df1cc35a6f525969c.html">Scenario1
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">Check the flights on the website of the airline latam
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>automatedTests.tasks.CheckFlights.performAs(CheckFlights.java:32)<br />automatedTests.stepdefinitions.CheckFlightsStepDefinitions.userSelectsTheOptionOneWayEntersTheDataToContinue(CheckFlightsStepDefinitions.java:29)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.id: WrapperCardFlight0 to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>automatedTests.tasks.CheckFlights.performAs(CheckFlights.java :32)<br />automatedTests.stepdefinitions.CheckFlightsStepDefinitions.userSelectsTheOptionOneWayEntersTheDataToContinue(CheckFlightsStepDefinitions.java :29)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource8816145011968848686.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="b17df4395636de1cf9d931080c283295fa6fba6dad0368f61e95e7b13d23bcbe.png" title=" Given User enters to the Latam's Airlines page" width="1366"/>
+                <img src="b17df4395636de1cf9d931080c283295fa6fba6dad0368f61e95e7b13d23bcbe.png" title=" Herika open latam" width="1366"/>
+                <img src="b17df4395636de1cf9d931080c283295fa6fba6dad0368f61e95e7b13d23bcbe.png" title=" Herika opens the Latam page" width="1366"/>
+                <img src="b17df4395636de1cf9d931080c283295fa6fba6dad0368f61e95e7b13d23bcbe.png" title=" Herika open latam (completed)" width="1366"/>
+                <img src="b17df4395636de1cf9d931080c283295fa6fba6dad0368f61e95e7b13d23bcbe.png" title=" Given User enters to the Latam's Airlines page (completed)" width="1366"/>
+                <img src="df64a4f9b9f552cba64e6f797383e63827e9a7b7cc94ac981b63ceacb77a9148.png" title=" When User selects the option 'one way' enters the data to continue
+| enterOrigin | enterDestination |
+| Pereira | Medellin |" width="1366"/>
+                <img src="df64a4f9b9f552cba64e6f797383e63827e9a7b7cc94ac981b63ceacb77a9148.png" title=" Herika check flights" width="1366"/>
+                <img src="df64a4f9b9f552cba64e6f797383e63827e9a7b7cc94ac981b63ceacb77a9148.png" title=" Herika clicks on Click on the one way option" width="1366"/>
+                <img src="c7fa62b9120b1287104f0a71561154a4cc07401e5552bcdf8ebcd715d99fc455.png" title=" Herika clicks on Click on the one way option" width="1366"/>
+                <img src="705426e78f8d7504f56ea29fd4105f9db5f3c35bf8e56a96d3101961113204e1.png" title=" Herika clicks on Click on the field enter the origin" width="1366"/>
+                <img src="8e39708d6a06f67f9630627ea47a388f2e58e0d1f9312c7001efe8f61e07ff10.png" title=" Herika enters 'Pereira' into Enter city of origin" width="1366"/>
+                <img src="3a6c3f5595ae7b779bfc23512a2ad49f529ae71ab21e327d664fac5b80ddfd4b.png" title=" Herika types 'ENTER' in Select origin " width="1366"/>
+                <img src="97fe9607d2e965746970f76bee8fd2c45b46754102a73f80df02d5f57f8d017b.png" title=" Herika clicks on Click on the field enter destination" width="1366"/>
+                <img src="707ed5378aaa513ca5725186900bf389d794dad6d06468a4a7cd255e1a833d4a.png" title=" Herika enters 'Medellin' into Enter destination city" width="1366"/>
+                <img src="d5fb9bbe542c6c0b58b836e62e8daf805e30b8f8c4f847dab8db6473c978136f.png" title=" Herika types 'ENTER' in Select destination" width="1366"/>
+                <img src="6cbc518cf604118bb006ee4a0339500140624eda2954062f2d252aa252b715b6.png" title=" Herika clicks on Click on the date field one way" width="1366"/>
+                <img src="699d4529addc28b87d31d523e89bff7f8bd68c8e8f82e78bba88445f4bd4a111.png" title=" Herika clicks on Select date" width="1366"/>
+                <img src="ebaeb7e2b203bc52fe47cf5f352436fc535ac3c59505b150956585891cfa15e1.png" title=" Herika clicks on Click on the search button" width="1366"/>
+                <img src="ebaeb7e2b203bc52fe47cf5f352436fc535ac3c59505b150956585891cfa15e1.png" title=" Herika clicks on Select the cheapest option faster: <span class='failing-color'>FAILURE</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>
