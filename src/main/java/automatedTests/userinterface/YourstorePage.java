@@ -37,6 +37,6 @@ public class YourstorePage extends PageObject {
             .located(By.linkText("Checkout"));
 
     public static final Target CAPTURE_TEXT = Target.the("Check scenario")
-            .located(By.linkText("Shopping Cart"));
+            .located(By.cssSelector("#checkout-cart .alert-danger"));
 
 }

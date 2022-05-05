@@ -25,9 +25,13 @@ public class ResultYourstore implements Question <Boolean> {
     public Boolean answeredBy(Actor actor) {
         boolean UnsuccessfulTest;
 
-        String VerifyPurchase = Text.of(YourstorePage.CAPTURE_TEXT).viewedBy(actor).asString();
+        String VerifyPurchase = Text.of(YourstorePage.CAPTURE_TEXT).viewedBy(actor).asString().trim();
 
-        if (opencartData.get(0).getIncompleteTest().equals(VerifyPurchase)){
+        String VerifyPurchaseString = VerifyPurchase.replace("\n", "");
+
+        String NewVerifyPurchase = VerifyPurchaseString.substring(0, VerifyPurchaseString.length()-1);
+
+        if (opencartData.get(0).getIncompleteTest().equals(NewVerifyPurchase)){
             UnsuccessfulTest = true;
         }else {
             UnsuccessfulTest = false;

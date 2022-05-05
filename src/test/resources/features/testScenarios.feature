@@ -27,7 +27,7 @@
       |   Mac     |     2       |
     Then User checks if the product was added to the shopping cart to finalize the purchase
       | incompleteTest |
-      | Shopping Cart  |
+      |  Products marked with *** are not available in the desired quantity or not in stock! |
 
 @Scenario3
   Scenario: Verify that the results of the products section are according to the selected filter
