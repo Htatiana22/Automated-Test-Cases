@@ -21,11 +21,6 @@ public class FilterProductStepDefinitions {
         OnStage.setTheStage(new OnlineCast());
     }
 
-    @Given("^User registered log in opencart page$")
-    public void userRegisteredLogInOpencartPage(List<OpencartData> opencartData) {
-        OnStage.theActorCalled("Herika").wasAbleTo(OpenCart.thePage(opencartData));
-    }
-
     @When("^User selects the 'Products' option to search for available products$")
     public void userSelectsTheProductsOptionToSearchForAvailableProducts(List<OpencartData> opencartData) {
         OnStage.theActorInTheSpotlight().attemptsTo(FilterSearch.theProducts(opencartData));

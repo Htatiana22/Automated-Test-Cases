@@ -4,6 +4,7 @@ import automatedTests.model.OpencartData;
 import automatedTests.questions.ResultOpencart;
 import automatedTests.tasks.OpenCart;
 import automatedTests.tasks.SelectOptions;
+import automatedTests.utils.WaitTime;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -24,6 +25,7 @@ public class MarketPlaceStepDefinitions {
     @Given("^User registered enters the opencart page$")
     public void userRegisteredEntersTheOpencartPage(List<OpencartData> opencartData) {
         OnStage.theActorCalled("Herika").wasAbleTo(OpenCart.thePage(opencartData));
+        WaitTime.Time();
     }
 
     @When("^User selects the 'Marketplace' section to download a free template$")

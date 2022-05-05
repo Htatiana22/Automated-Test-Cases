@@ -22,13 +22,8 @@ public class UnsuccessfulPurchaseStepDefinitions {
         OnStage.setTheStage(new OnlineCast());
     }
 
-    @Given("^User registered enters the opencart page in the section your store$")
-    public void userRegisteredEntersTheOpencartPageInTheSectionYourStore(List<OpencartData> opencartData) {
-        OnStage.theActorCalled("Herika").wasAbleTo(OpenCart.thePage(opencartData));
-    }
-
-    @When("^User looking for a laptop to buy$")
-    public void userLookingForALaptopToBuy(List<OpencartData> opencartData) {
+    @When("^User selects the 'Yourstore' module to buy a laptop$")
+    public void userSelectsTheYourstoreModuleToBuyALaptop(List<OpencartData> opencartData) {
         OnStage.theActorInTheSpotlight().attemptsTo(SearchProducts.yourStore(opencartData));
     }
 

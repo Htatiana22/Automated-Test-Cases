@@ -16,7 +16,7 @@ import java.util.List;
 
 public class CheckFlightsStepDefinitions {
 
-    @Before
+   @Before
     public void setStage () {
         OnStage.setTheStage(new OnlineCast());
     }
