@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Check flights on the latam airline page" skipped="0" tests="1" time="26.07" timestamp="2022-05-03 06:04:54"><testcase name="Check the flights on the website of the airline latam"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
-automatedTests.tasks.CheckFlights.performAs(CheckFlights.java:32)&#13;
-automatedTests.stepdefinitions.CheckFlightsStepDefinitions.userSelectsTheOptionOneWayEntersTheDataToContinue(CheckFlightsStepDefinitions.java:29)&#13;
-cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
-</system-err></testcase></testsuite>
